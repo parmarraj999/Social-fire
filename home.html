@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.scss">
+    <!-- --- font awsome----- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="index.js" defer></script>
+    <title>social-fire</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="top-nav">
+            <div class="nav-button">
+                <div class="logo">
+                    <img src="img/logo.jpg" alt="" >
+                </div>
+                <i class="icon fa-solid fa-bell" onclick="alertOfWork()"></i>
+                <i class="icon fa-solid fa-pen"  style="color: black;"></i>
+            </div>
+            <div class="profile" onclick="openProfile()">
+                <img src="img/pic-1.jpg" alt="" class="profile-small-image">
+                <h2 class="name">----</h2>
+            </div>
+        </nav>
+        <div class="profile-edit-container">
+            <div class="profile-edit-fold">
+                <h3>Name</h3>
+                <input type="text" class="name-edit" placeholder="Enter first name">
+                <h3>Username</h3>
+                <input type="text" class="username-edit" placeholder="Enter new username">
+                <button class="btn submit-newName">Submit</button>
+                <button class="btn-cancel" onclick="closeEditTool()">Cancel</button>
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="post-card">
+                <img src="img/pic-1.jpg" alt="">
+                <div class="post-details">
+                    <div class="post-card-profile" onclick="openProfile()">
+                        <img src="img/pic-1.jpg" alt="">
+                        <h1 class="profile-name">profile Name</h1>
+                    </div>
+                    <p class="caption">Lorem ipsum dolor sit amet consectetur. Lorem, ipsum dolor.</p>
+                    <h6 class="hastag">#feshion #red #cloud</h6>
+                </div>
+                <div class=" post-card-tool-container " onclick="openClose()">
+                    <div class="tools">
+                        <div class="like tool-icon"><i class="fa-solid fa-heart"></i></div>
+                        <div class="comment tool-icon"><i class="fa-solid fa-comment"></i></div>
+                        <div class="share tool-icon"><i class="fa-solid fa-share"></i></div>
+                        <div class="save tool-icon"><i class="fa-solid fa-tag"></i></div>
+                        <div class="close-tool-btn tool-icon"><i class="fa-solid fa-times"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-card">
+                <img src="img/pic-2.jpg" alt="">
+                <div class="post-details">
+                    <div class="post-card-profile">
+                        <img src="img/pic-2.jpg" alt="">
+                        <h1 class="profile-name">profile Name</h1>
+                    </div>
+                    <p class="caption">Lorem ipsum dolor sit amet consectetur. Lorem, ipsum dolor.</p>
+                    <h6 class="hastag">#feshion #red #cloud</h6>
+                </div>
+                <div class=" post-card-tool-container " onclick="openClose()">
+                    <div class="tools">
+                        <div class="like tool-icon"><i class="fa-solid fa-heart"></i></div>
+                        <div class="comment tool-icon"><i class="fa-solid fa-comment"></i></div>
+                        <div class="share tool-icon"><i class="fa-solid fa-share"></i></div>
+                        <div class="save tool-icon"><i class="fa-solid fa-tag"></i></div>
+                        <div class="close-tool-btn tool-icon"><i class="fa-solid fa-times"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-card">
+                <img src="img/pic-3.jpg" alt="">
+                <div class="post-details">
+                    <div class="post-card-profile">
+                        <img src="img/pic-2.jpg" alt="">
+                        <h1 class="profile-name">profile Name</h1>
+                    </div>
+                    <p class="caption">Lorem ipsum dolor sit amet consectetur. Lorem, ipsum dolor.</p>
+                    <h6 class="hastag">#feshion #red #cloud</h6>
+                </div>
+                <div class=" post-card-tool-container " onclick="openClose()">
+                    <div class="tools">
+                        <div class="like tool-icon"><i class="fa-solid fa-heart"></i></div>
+                        <div class="comment tool-icon"><i class="fa-solid fa-comment"></i></div>
+                        <div class="share tool-icon"><i class="fa-solid fa-share"></i></div>
+                        <div class="save tool-icon"><i class="fa-solid fa-tag"></i></div>
+                        <div class="close-tool-btn tool-icon"><i class="fa-solid fa-times"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-card">
+                <img src="img/pic-4.jpg" alt="">
+                <div class="post-details">
+                    <div class="post-card-profile">
+                        <img src="img/pic-4.jpg" alt="">
+                        <h1 class="profile-name">profile Name</h1>
+                    </div>
+                    <p class="caption">Lorem ipsum dolor sit amet consectetur. Lorem, ipsum dolor.</p>
+                    <h6 class="hastag">#feshion #red #cloud</h6>
+                </div>
+                <div class=" post-card-tool-container " onclick="openClose()">
+                    <div class="tools">
+                        <div class="like tool-icon"><i class="fa-solid fa-heart"></i></div>
+                        <div class="comment tool-icon"><i class="fa-solid fa-comment"></i></div>
+                        <div class="share tool-icon"><i class="fa-solid fa-share"></i></div>
+                        <div class="save tool-icon"><i class="fa-solid fa-tag"></i></div>
+                        <div class="close-tool-btn tool-icon"><i class="fa-solid fa-times"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-card">
+                <img src="img/pic-5.jpg" alt="">
+                <div class="post-details">
+                    <div class="post-card-profile">
+                        <img src="img/pic-2.jpg" alt="">
+                        <h1 class="profile-name">profile Name</h1>
+                    </div>
+                    <p class="caption">Lorem ipsum dolor sit amet consectetur. Lorem, ipsum dolor.</p>
+                    <h6 class="hastag">#feshion #red #cloud</h6>
+                </div>
+                <div class=" post-card-tool-container " onclick="openClose()">
+                    <div class="tools">
+                        <div class="like tool-icon"><i class="fa-solid fa-heart"></i></div>
+                        <div class="comment tool-icon"><i class="fa-solid fa-comment"></i></div>
+                        <div class="share tool-icon"><i class="fa-solid fa-share"></i></div>
+                        <div class="save tool-icon"><i class="fa-solid fa-tag"></i></div>
+                        <div class="close-tool-btn tool-icon"><i class="fa-solid fa-times"></i></div>
+                    </div>
+                </div>
+            </div>      
+        </div>
+        <div class="bottom-nav">
+            <div class="bottom-icon active-icon"><i class="fa-solid fa-home"></i></div>
+            <div class="bottom-icon"><i class="fa-solid fa-compass" onclick="alertOfWork()"></i></div>
+            <div class="bottom-icon"><i class="fa-solid fa-code"></i></div>
+            <div class="bottom-icon profile-btn"><i class="fa-solid fa-user "></i></div>
+        </div>
+    </div>
+    <div class="profile-container">
+        <div class="profile-top-nav">
+            <i class="fa-solid fa-angle-left"></i>
+            <h2 class="profile-container-name">Profile name</h2>
+            <i class="fa-solid fa-ellipsis-h"></i>
+        </div>
+        <div class="profile-main-container">
+            <div class="profile-image-container">
+                <img src="img/pic-1.jpg" alt="" class="profile-main-image">
+            </div>
+            <div class="profile-details">
+                <h1 class="username">@username123</h1>
+                <div class="follow-details">
+                    <div class="follow-box">
+                        <h5>29</h5>
+                        <p>Following</p>
+                    </div>
+                    <div class="follow-box">
+                        <h5>1,001</h5>
+                        <p>Follower</p>
+                    </div>
+                    <div class="follow-box">
+                        <h5>7.5M</h5>
+                        <p>Likes</p>
+                    </div>
+                </div>
+                <div class="follow-btn-container">
+                    <div class="btn" onclick="alertOfThanks()">Follow</div>
+                    <div class="bottom-icon" style="border-radius: 12px;">
+                      <i class="fa-solid fa-envelope"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="posts-container">
+                <div class="posts-nav">
+                    <div class="tags">
+                        <h4>Photos</h4>
+                        <h4>Video</h4>
+                        <h4>Tagged</h4>
+                    </div>
+                    <div class="dots">
+                        <i class="fa-solid fa-ellipsis-v"></i>
+                    </div>
+                </div>
+                <div class="post-image-container">
+                    <img src="img/pic-2.jpg" alt="" onclick="imgChanger('img/pic-5.jpg')">
+                    <img src="img/pic-3.jpg" alt="">
+                    <img src="img/pic-5.jpg" alt="">
+                    <img src="img/pic-3.jpg" alt="">
+                    <img src="img/pic-4.jpg" alt="">
+                    <img src="img/pic-1.jpg" alt="">
+                    <img src="img/pic-2.jpg" alt="">
+                    <img src="img/pic-3.jpg" alt="">
+                    <img src="img/pic-5.jpg" alt="">
+                </div>
+            </div>
+            <div class="profile-bubble">
+                <h2>Choose profile </h2>
+                <div class="profile-bubble-img">
+                    <img src="img/pic-1.jpg" alt="" onclick="imgChanger('img/pic-1.jpg')">
+                    <img src="img/pic-2.jpg" alt="" onclick="imgChanger('img/pic-2.jpg')">
+                    <img src="img/pic-3.jpg" alt="" onclick="imgChanger('img/pic-3.jpg')">
+                    <img src="img/pic-4.jpg" alt="" onclick="imgChanger('img/pic-4.jpg')">
+                    <img src="img/pic-5.jpg" alt="" onclick="imgChanger('img/pic-5.jpg')">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="harry-add-container">
+        <img src="img/harry-logo.png" alt="">
+        <button class="btn"><a href="www.github.com/parmarraj999">github</a></button>
+        <button class="btn-cancel codeToHome"> <i class="fa-solid fa-angle-left" style="color:black;"></i> home</button>
+    </div>
+</body>
+</html>
